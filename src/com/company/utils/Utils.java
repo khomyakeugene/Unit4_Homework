@@ -8,7 +8,7 @@ import java.text.MessageFormat;
 public class Utils {
     public final static String CLASS_NAME_MESSAGE = "Class Name: {0}";
 
-    public static String getClassNameMessage(Object object) {
+    public static String getClassNameMessage(Object object) { // зачем нам неиспользуемый метод?
         return MessageFormat.format(CLASS_NAME_MESSAGE, object.getClass().getName());
     }
 

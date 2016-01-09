@@ -8,7 +8,7 @@ public class Point {
     private Double y;
 
     public Point(Double x, Double y) {
-        super();
+        super(); //а что мы вызываем этим конструктором super?
 
         this.x = x;
         this.y = y;
