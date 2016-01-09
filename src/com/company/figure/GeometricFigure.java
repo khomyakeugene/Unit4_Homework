@@ -37,7 +37,9 @@ public abstract class GeometricFigure {
     public String toString() {
         return MessageFormat.format(Const.AREA_OF_FIGURE_MESSAGE,
                 new Object[]{this.getClass().getName(), displayFigureParameters(), getArea()});
-    }
+    } // Идея тебе подсказывает, что не обязательно создавать массив объектов, так как метод format() принимает vararg -
+    // различное количество аргументов, их можно просто перечислить через запятую.
+
 
     public void showFigureArea() {
         Utils.writeMessage(toString());

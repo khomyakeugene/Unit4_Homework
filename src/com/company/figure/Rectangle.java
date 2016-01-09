@@ -8,7 +8,7 @@ import java.text.MessageFormat;
 public class Rectangle extends GeometricFigure {
     public final static String WIDTH_AND_HIGH_ARE_MESSAGE = "width = {0}, height = {1}";
 
-    private Double width;
+    private Double width; // В других фигурах ты присваивал NAN, здесь нет - почему?
     private Double height;
 
     public Rectangle(Double width, Double height) {
