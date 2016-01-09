@@ -35,7 +35,8 @@ public abstract class GeometricFigure {
 
     @Override
     public String toString() {
-        return MessageFormat.format(Const.AREA_OF_FIGURE_MESSAGE, new Object[]{this.getClass().getName(), displayFigureParameters(), getArea()});
+        return MessageFormat.format(Const.AREA_OF_FIGURE_MESSAGE,
+                new Object[]{this.getClass().getName(), displayFigureParameters(), getArea()});
     }
 
     public void showFigureArea() {
