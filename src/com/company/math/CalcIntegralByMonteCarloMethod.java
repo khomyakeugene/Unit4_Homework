@@ -4,7 +4,7 @@ package com.company.math;
  * Created by Yevgen on 09.01.2016.
  */
 public abstract class CalcIntegralByMonteCarloMethod {
-    abstract protected Double function(Double argument);
+    abstract public Double function(Double argument);
 
     public Double integral(Double startPoint, Double finishPoint, int precision) {
         Double result = 0.0;

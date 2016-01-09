@@ -4,9 +4,9 @@ package com.company.figure;
  * Created by Yevgen on 02.01.2016.
  */
 public class CalcSimpleGeometricFigureArea {
-    public Double calcCircleArea(Double radius, boolean showResult) { //boolean лучше именовать, начиная с is или has, а то не совсем понятно
+    public Double calcCircleArea(Double radius, boolean isNeedShowResult) {
         Circle circle = new Circle(radius); //тут можно применить полиморфизм GeometricFigure circle = new Circle...
-        if (showResult) {
+        if (isNeedShowResult) {
             circle.showFigureArea();
         }
 
