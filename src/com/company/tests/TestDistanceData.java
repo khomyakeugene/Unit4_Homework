@@ -10,7 +10,7 @@ import java.text.MessageFormat;
  * Created by Yevgen on 29.12.2015.
  */
 public class TestDistanceData {
-    public static final String DISTANCE_MESSAGE = "distance between ({0}; {1}) and ({2}; {3}) is {4}";
+    public static final String DISTANCE_MESSAGE = "Distance between ({0}; {1}) and ({2}; {3}) is {4}";
 
     public static final Double X1 = 3.0;
     public static final Double Y1 = 5.3;

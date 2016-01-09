@@ -11,15 +11,21 @@ public class Main {
     }
 
     public static void demonstrateData() throws Exception  {
+        // Main task for Unit 4
+        unit4MainTask();
+
+        // -------------------------------------------------------------------------
+        // Additional task for Unit 4: Integral calculating using Monte Carlo method
+        unit4AdditionalTask();
+    }
+
+    // Main task for Unit 4
+    public static void unit4MainTask() throws Exception  {
         new TestFigureData().demonstrateData();
 
         new TestTemperatureData().demonstrateTemperatureData();
 
         new TestDistanceData().demonstrateDistanceData();
-
-        // -------------------------------------------------------------------------
-        // Additional task for Unit 4: Integral calculating using Monte Carlo method
-        unit4AdditionalTask();
     }
 
     // Additional task for Unit 4: Integral calculating using Monte Carlo method
