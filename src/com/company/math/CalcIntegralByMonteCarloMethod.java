@@ -33,12 +33,6 @@ public class CalcIntegralByMonteCarloMethod {
         return functionClassName;
     }
 
-    public void setFunctionClassName(String functionClassName) {
-        this.functionClassName = functionClassName;
-
-        initFunction();
-    }
-
     public String getFunctionMethodName() {
         return functionMethodName;
     }
