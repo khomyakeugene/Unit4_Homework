@@ -27,10 +27,6 @@ public abstract class GeometricFigure {
 
     abstract void calcArea();
 
-    protected void clearArea() {
-        setArea(Double.NaN);
-    }
-
     protected String displayFigureParameters() {
         return UNDEFINED_TEXT;
     }

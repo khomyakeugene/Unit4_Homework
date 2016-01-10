@@ -8,9 +8,9 @@ import java.text.MessageFormat;
 public class Triangle extends GeometricFigure {
     public final static String FIRSTSIDE_SECONDSIDE_THIRDSIDE_MESSAGE = "first side = {0}, second side = {1}, third side = {2}";
 
-    private Double firstSide = Double.NaN;
-    private Double secondSide = Double.NaN;
-    private Double thirdSide = Double.NaN;
+    private Double firstSide;
+    private Double secondSide;
+    private Double thirdSide;
 
     public Triangle(Double firstSide, Double secondSide, Double thirdSide) {
         super();
@@ -24,30 +24,12 @@ public class Triangle extends GeometricFigure {
         return firstSide;
     }
 
-    public void setFirstSide(Double firstSide) {
-        this.firstSide = firstSide;
-
-        clearArea();
-    }
-
     public Double getSecondSide() {
         return secondSide;
     }
 
-    public void setSecondSide(Double secondSide) {
-        this.secondSide = secondSide;
-
-        clearArea();
-    }
-
     public Double getThirdSide() {
         return thirdSide;
-    }
-
-    public void setThirdSide(Double thirdSide) {
-        this.thirdSide = thirdSide;
-
-        clearArea();
     }
 
     protected Double calcPerimeter() {

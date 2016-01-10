@@ -20,12 +20,6 @@ public class Circle extends GeometricFigure {
         return radius;
     }
 
-    public void setRadius(Double radius) {
-        this.radius = radius;
-
-        clearArea();
-    }
-
     @Override
     public void calcArea() {
         setArea(Math.PI * Math.pow(radius, 2));

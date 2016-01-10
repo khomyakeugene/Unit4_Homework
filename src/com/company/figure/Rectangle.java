@@ -8,8 +8,8 @@ import java.text.MessageFormat;
 public class Rectangle extends GeometricFigure {
     public final static String WIDTH_AND_HIGH_ARE_MESSAGE = "width = {0}, height = {1}";
 
-    private Double width; // В других фигурах ты присваивал NAN, здесь нет - почему? -
-    private Double height; // 10.01.2016 01:25, Хом'як: тому що для GeometricFigure area = Double.NaN має значення, а тут обидва поля встановлюються конструктором
+    private Double width;
+    private Double height;
 
     public Rectangle(Double width, Double height) {
         super();
@@ -22,20 +22,8 @@ public class Rectangle extends GeometricFigure {
         return width;
     }
 
-    public void setWidth(Double width) {
-        this.width = width;
-
-        clearArea();
-    }
-
     public Double getHeight() {
         return height;
-    }
-
-    public void setHeight(Double height) {
-        this.height = height;
-
-        clearArea();
     }
 
     @Override
