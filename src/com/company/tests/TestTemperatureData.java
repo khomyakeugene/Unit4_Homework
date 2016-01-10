@@ -1,9 +1,10 @@
 package com.company.tests;
 
-import com.company.temperature.Temperature;
 import com.company.utils.Utils;
 
 import java.text.MessageFormat;
+
+import static com.company.temperature.Temperature.*;
 
 /**
  * Created by Yevgen on 29.12.2015.
@@ -17,9 +18,9 @@ public class TestTemperatureData {
 
     public void demonstrateTemperatureData() {
         Utils.writeMessage(MessageFormat.format(CELSIUS_TO_FAHRENHEIT_MESSAGE, TEST_CELSIUS_DEGREE,
-                Temperature.transformCelsiusToFahrenheit(TEST_CELSIUS_DEGREE)));
+                transformCelsiusToFahrenheit(TEST_CELSIUS_DEGREE)));
         Utils.writeMessage(MessageFormat.format(FAHRENHEIT_TO_CELSIUS_MESSAGE, TEST_FAHRENHEIT_DEGREE,
-                Temperature.transformFahrenheitToCelsius(TEST_FAHRENHEIT_DEGREE)));
+                transformFahrenheitToCelsius(TEST_FAHRENHEIT_DEGREE)));
 
     }
 }
