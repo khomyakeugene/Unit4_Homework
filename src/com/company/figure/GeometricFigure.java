@@ -1,6 +1,5 @@
 package com.company.figure;
 
-import com.company.utils.Const;
 import com.company.utils.Utils;
 
 import java.text.MessageFormat;
@@ -9,6 +8,9 @@ import java.text.MessageFormat;
  * Created by Yevgen on 29.12.2015.
  */
 public abstract class GeometricFigure {
+    public final static String AREA_OF_FIGURE_MESSAGE = "The area of the figure \"{0}\" (with the parameters such as {1}) is {2}";
+    public final static String UNDEFINED_TEXT = "undefined";
+
     private Double area = Double.NaN;
 
     public Double getArea() {
@@ -30,12 +32,12 @@ public abstract class GeometricFigure {
     }
 
     protected String displayFigureParameters() {
-        return Const.UNDEFINED_TEXT;
+        return UNDEFINED_TEXT;
     }
 
     @Override
     public String toString() {
-        return MessageFormat.format(Const.AREA_OF_FIGURE_MESSAGE,
+        return MessageFormat.format(AREA_OF_FIGURE_MESSAGE,
                 this.getClass().getName(), displayFigureParameters(), getArea());
     }
 
