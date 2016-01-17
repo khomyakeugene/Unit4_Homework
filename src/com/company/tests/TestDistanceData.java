@@ -21,7 +21,7 @@ public class TestDistanceData {
         Point point1 = new Point(X1, Y1);
         Point point2 = new Point(X2, Y2);
 
-        Utils.writeMessage(MessageFormat.format(DISTANCE_MESSAGE, point1.getX(), point1.getY(),
+        Utils.printMessage(MessageFormat.format(DISTANCE_MESSAGE, point1.getX(), point1.getY(),
                 point2.getX(), point2.getY(), Distance.calcDistance(point1,point2)));
     }
 }

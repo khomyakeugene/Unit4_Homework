@@ -38,6 +38,6 @@ public abstract class GeometricFigure {
     }
 
     public void showFigureArea() {
-        Utils.writeMessage(toString());
+        Utils.printMessage(toString());
     }
 }

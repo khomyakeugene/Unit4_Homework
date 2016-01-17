@@ -18,7 +18,7 @@ public class TestMonteCarloIntegralCalculation {
     public final static String INTEGRAL_VALUE_PATTERN = "Integral value for function {0}.{1} is {2}";
 
     public void demonstrateCarloIntegralCalculation () {
-        Utils.writeMessage(Utils.getFullMethodName());
+        Utils.printMessage(Utils.getFullMethodName());
 
         // Integral calculator
         CalcIntegralByMonteCarloMethod calcIntegralByMonteCarloMethod = new CalcIntegralByMonteCarloMethod(MATH_CLASS_NAME);
@@ -37,7 +37,7 @@ public class TestMonteCarloIntegralCalculation {
                 int precision = Utils.readInputInt(INPUT_PRECISION_MESSAGE);
 
                 // Calc and show calcIntegral value
-                Utils.writeMessage(MessageFormat.format(INTEGRAL_VALUE_PATTERN,
+                Utils.printMessage(MessageFormat.format(INTEGRAL_VALUE_PATTERN,
                         calcIntegralByMonteCarloMethod.getFunctionClassName(),
                         calcIntegralByMonteCarloMethod.getFunctionMethodName(),
                         calcIntegralByMonteCarloMethod.calcIntegral(startPoint, finishPoint, precision)));
