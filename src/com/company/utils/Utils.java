@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.text.MessageFormat;
-import java.util.Scanner;
+import java.util.*;
 
 /**
  * Created by Yevgen on 06.01.2016.
@@ -116,10 +116,23 @@ public class Utils {
             if (errorMessage.isEmpty()) {
                 printMessage(MessageFormat.format(PROPERTY_DESCRIPTION_PATTERN, objectProperty.getPropertyType(),
                         objectProperty.getRealPropertyName(), className));
-            }
-            else {
+            } else {
                 printMessage(errorMessage);
             }
         } while (true);
+    }
+
+    public static String repeatString(String string, int times) {
+        // Some variant BEFORE Java 8 - store here just as an example of an alternative way
+        // return String.format(String.format("%%%ds", times), "").replace(" ", string);
+        return String.join("", java.util.Collections.nCopies(times, string));
+    }
+
+    public static String repeatChar(Character character, int times) {
+        return repeatString(character.toString(), times);
+    }
+
+    public static String stringStart(String string, int length) {
+        return (string.length() > length) ? string.substring(0, length) : string;
     }
 }
