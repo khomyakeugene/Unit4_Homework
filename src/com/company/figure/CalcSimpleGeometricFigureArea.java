@@ -5,7 +5,7 @@ package com.company.figure;
  */
 public class CalcSimpleGeometricFigureArea {
     public Double calcCircleArea(Double radius, boolean isNeedShowResult) {
-        Circle circle = new Circle(radius); //тут можно применить полиморфизм GeometricFigure circle = new Circle...
+        Circle circle = new Circle(radius);
         if (isNeedShowResult) {
             circle.showFigureArea();
         }
