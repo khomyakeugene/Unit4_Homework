@@ -13,8 +13,6 @@ public class Triangle extends GeometricFigure {
     private Double thirdSide;
 
     public Triangle(Double firstSide, Double secondSide, Double thirdSide) {
-        super();
-
         this.firstSide = firstSide;
         this.secondSide = secondSide;
         this.thirdSide = thirdSide;
