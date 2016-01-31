@@ -42,7 +42,8 @@ public class Triangle extends GeometricFigure {
     private Double calcAreaByHeronsFormula() {
         Double halfOfPerimeter = calcPerimeter() / 2.0;
 
-        return Math.sqrt(halfOfPerimeter * (halfOfPerimeter - getFirstSide()) * (halfOfPerimeter - getSecondSide()) * (halfOfPerimeter - getThirdSide()));
+        return Math.sqrt(halfOfPerimeter * (halfOfPerimeter - getFirstSide()) * (halfOfPerimeter - getSecondSide()) *
+                (halfOfPerimeter - getThirdSide()));
     }
 
     @Override
