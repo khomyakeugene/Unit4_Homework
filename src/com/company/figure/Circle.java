@@ -11,8 +11,6 @@ public class Circle extends GeometricFigure {
     private Double radius;
 
     public Circle(Double radius) {
-        super();
-
         this.radius = radius;
     }
 

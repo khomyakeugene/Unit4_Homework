@@ -12,8 +12,6 @@ public class Rectangle extends GeometricFigure {
     private Double height;
 
     public Rectangle(Double width, Double height) {
-        super();
-
         this.width = width;
         this.height = height;
     }

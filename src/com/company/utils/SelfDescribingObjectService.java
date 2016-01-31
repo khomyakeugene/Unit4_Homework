@@ -1,9 +1,6 @@
 package com.company.utils;
 
-import java.lang.reflect.Field;
 import java.lang.reflect.Method;
-import java.text.MessageFormat;
-import java.util.ArrayList;
 
 /**
  * Created by Yevgen on 10.01.2016.
