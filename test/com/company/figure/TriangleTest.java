@@ -9,21 +9,21 @@ import static org.junit.Assert.assertEquals;
  * Created by Yevgen on 31.01.2016 as a part of the project "Unit4_Homework".
  */
 public class TriangleTest {
-    public static final Double TEST_FIRST_TRIANGLE_SIDE = 7.0;
-    public static final Double TEST_FIRST_SECOND_SIDE = 3.0;
-    public static final Double TEST_THIRD_TRIANGLE_SIDE = 6.0;
+    public static final Double firstSide = 7.0;
+    public static final Double secondSide = 3.0;
+    public static final Double thirdSide = 6.0;
     private static Triangle triangle;
 
     @BeforeClass
     public static void setUpClass() throws Exception {
-        triangle = new Triangle(TEST_FIRST_TRIANGLE_SIDE, TEST_FIRST_SECOND_SIDE, TEST_THIRD_TRIANGLE_SIDE);
+        triangle = new Triangle(firstSide, secondSide, thirdSide);
     }
 
     @Test
     public void testCalcPerimeter() throws Exception {
         final Double result = triangle.calcPerimeter();
 
-        final Double expectedResult = TEST_FIRST_TRIANGLE_SIDE + TEST_FIRST_SECOND_SIDE + TEST_THIRD_TRIANGLE_SIDE;
+        final Double expectedResult = firstSide + secondSide + thirdSide;
         assertEquals(expectedResult, result);
     }
 

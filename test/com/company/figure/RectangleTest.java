@@ -9,13 +9,13 @@ import static org.junit.Assert.assertEquals;
  * Created by Yevgen on 31.01.2016 as a part of the project "Unit4_Homework".
  */
 public class RectangleTest {
-    public static final Double TEST_RECTANGLE_WIDTH = 5.678;
-    public static final Double TEST_RECTANGLE_HEIGHT = 9.101;
+    public static final Double width = 5.678;
+    public static final Double height = 9.101;
     private static Rectangle rectangle;
 
     @BeforeClass
     public static void setUpClass() throws Exception {
-        rectangle = new Rectangle(TEST_RECTANGLE_WIDTH, TEST_RECTANGLE_HEIGHT);
+        rectangle = new Rectangle(width, height);
     }
 
     @Test
@@ -23,7 +23,7 @@ public class RectangleTest {
         rectangle.calcArea();
         final Double result = rectangle.getArea();
 
-        final Double expectedResult = TEST_RECTANGLE_WIDTH * TEST_RECTANGLE_HEIGHT;
+        final Double expectedResult = width * height;
         assertEquals(expectedResult, result);
     }
 }
