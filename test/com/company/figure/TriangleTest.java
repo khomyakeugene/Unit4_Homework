@@ -9,9 +9,9 @@ import static org.junit.Assert.assertEquals;
  * Created by Yevgen on 31.01.2016 as a part of the project "Unit4_Homework".
  */
 public class TriangleTest {
-    public static final Double firstSide = 7.0;
-    public static final Double secondSide = 3.0;
-    public static final Double thirdSide = 6.0;
+    static final Double firstSide = 7.0;
+    static final Double secondSide = 3.0;
+    static final Double thirdSide = 6.0;
     private static Triangle triangle;
 
     @BeforeClass
@@ -19,7 +19,7 @@ public class TriangleTest {
         triangle = new Triangle(firstSide, secondSide, thirdSide);
     }
 
-    @Test
+    @Test (timeout = 1000)
     public void testCalcPerimeter() throws Exception {
         final Double result = triangle.calcPerimeter();
 
@@ -27,7 +27,7 @@ public class TriangleTest {
         assertEquals(expectedResult, result);
     }
 
-    @Test
+    @Test (timeout = 1000)
     public void testCalcArea() throws Exception {
         triangle.calcArea();
         final Double result = triangle.getArea();

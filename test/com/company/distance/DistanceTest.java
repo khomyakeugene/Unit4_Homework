@@ -8,12 +8,12 @@ import static org.junit.Assert.assertEquals;
  * Created by Yevgen on 01.02.2016 as a part of the project "Unit4_Homework".
  */
 public class DistanceTest {
-    public final Double x1 = 3.0;
-    public final Double y1 = 5.3;
-    public final Double x2 = 7.2;
-    public final Double y2 = 1.1;
+    final Double x1 = 3.0;
+    final Double y1 = 5.3;
+    final Double x2 = 7.2;
+    final Double y2 = 1.1;
 
-    @Test
+    @Test (timeout = 1000)
     public void testCalcDistance() throws Exception {
         final Double result = Distance.calcDistance(new Point(x1, y1), new Point(x2, y2));
 

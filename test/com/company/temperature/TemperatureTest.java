@@ -8,10 +8,10 @@ import static org.junit.Assert.assertEquals;
  * Created by Yevgen on 31.01.2016 as a part of the project "Unit4_Homework".
  */
 public class TemperatureTest {
-    public final Double celsiusDegree = 15.0;
-    public final Double fahrenheitDegree = 30.0;
+    final Double celsiusDegree = 15.0;
+    final Double fahrenheitDegree = 30.0;
 
-    @Test
+    @Test (timeout = 1000)
     public void testTransformCelsiusToFahrenheit() throws Exception {
         Double result = Temperature.transformCelsiusToFahrenheit(celsiusDegree);
 
@@ -20,7 +20,7 @@ public class TemperatureTest {
         assertEquals(expectedResult, result);
     }
 
-    @Test
+    @Test (timeout = 1000)
     public void testTransformFahrenheitToCelsius() throws Exception {
         Double result = Temperature.transformFahrenheitToCelsius(fahrenheitDegree);
 
