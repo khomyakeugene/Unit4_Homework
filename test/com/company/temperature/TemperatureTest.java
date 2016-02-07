@@ -13,10 +13,13 @@ public class TemperatureTest {
 
     @Test (timeout = 1000)
     public void testTransformCelsiusToFahrenheit() throws Exception {
+        //Как-то больше принято сначала писать (вычислять) expected результат, а потом уже актуальный
+        //По принципу Given - When - Then
         Double result = Temperature.transformCelsiusToFahrenheit(celsiusDegree);
 
         Double expectedResult = (celsiusDegree * Temperature.CELSIUS_TO_FAHRENHEIT_MULTIPLIER) +
                 Temperature.CELSIUS_TO_FAHRENHEIT_DIFFERENCE;
+
         assertEquals(expectedResult, result);
     }
 
