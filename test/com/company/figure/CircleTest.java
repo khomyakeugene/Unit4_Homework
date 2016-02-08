@@ -22,7 +22,7 @@ public class CircleTest {
         circle.calcArea();
         final Double result = circle.getArea();
 
-        final Double expectedResult = Math.PI * radius * radius;
-        assertEquals(expectedResult, result);
+        final Double expected = Math.PI * radius * radius;
+        assertEquals(expected, result);
     }
 }

@@ -17,18 +17,18 @@ public class TemperatureTest {
         //По принципу Given - When - Then
         Double result = Temperature.transformCelsiusToFahrenheit(celsiusDegree);
 
-        Double expectedResult = (celsiusDegree * Temperature.CELSIUS_TO_FAHRENHEIT_MULTIPLIER) +
+        Double expected = (celsiusDegree * Temperature.CELSIUS_TO_FAHRENHEIT_MULTIPLIER) +
                 Temperature.CELSIUS_TO_FAHRENHEIT_DIFFERENCE;
 
-        assertEquals(expectedResult, result);
+        assertEquals(expected, result);
     }
 
     @Test (timeout = 1000)
     public void testTransformFahrenheitToCelsius() throws Exception {
         Double result = Temperature.transformFahrenheitToCelsius(fahrenheitDegree);
 
-        Double expectedResult = (fahrenheitDegree - Temperature.CELSIUS_TO_FAHRENHEIT_DIFFERENCE) /
+        Double expected = (fahrenheitDegree - Temperature.CELSIUS_TO_FAHRENHEIT_DIFFERENCE) /
                 Temperature.CELSIUS_TO_FAHRENHEIT_MULTIPLIER;
-        assertEquals(expectedResult, result);
+        assertEquals(expected, result);
     }
 }

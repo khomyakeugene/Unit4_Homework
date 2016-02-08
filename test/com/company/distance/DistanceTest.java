@@ -17,7 +17,7 @@ public class DistanceTest {
     public void testCalcDistance() throws Exception {
         final Double result = Distance.calcDistance(new Point(x1, y1), new Point(x2, y2));
 
-        final Double expectedResult = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
-        assertEquals(expectedResult, result);
+        final Double expected = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+        assertEquals(expected, result);
     }
 }

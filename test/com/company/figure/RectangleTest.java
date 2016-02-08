@@ -23,7 +23,7 @@ public class RectangleTest {
         rectangle.calcArea();
         final Double result = rectangle.getArea();
 
-        final Double expectedResult = width * height;
-        assertEquals(expectedResult, result);
+        final Double expected = width * height;
+        assertEquals(expected, result);
     }
 }

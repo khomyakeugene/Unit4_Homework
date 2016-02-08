@@ -23,8 +23,8 @@ public class TriangleTest {
     public void testCalcPerimeter() throws Exception {
         final Double result = triangle.calcPerimeter();
 
-        final Double expectedResult = firstSide + secondSide + thirdSide;
-        assertEquals(expectedResult, result);
+        final Double expected = firstSide + secondSide + thirdSide;
+        assertEquals(expected, result);
     }
 
     @Test (timeout = 1000)
@@ -32,7 +32,7 @@ public class TriangleTest {
         triangle.calcArea();
         final Double result = triangle.getArea();
 
-        final Double expectedResult = 8.94427190999916;
-        assertEquals(expectedResult, result);
+        final Double expected = 8.94427190999916;
+        assertEquals(expected, result);
     }
 }

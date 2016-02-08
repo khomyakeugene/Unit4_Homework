@@ -25,7 +25,7 @@ public class CalcIntegralByMonteCarloMethodTest {
     public void testCalcIntegral() throws Exception {
         Double result = calcIntegralByMonteCarloMethod.calcIntegral(startPoint, finishPoint, precision);
 
-        final Double expectedResult = 20.31765116729242;
-        assertEquals(expectedResult, result);
+        final Double expected = 20.31765116729242;
+        assertEquals(expected, result);
     }
 }
